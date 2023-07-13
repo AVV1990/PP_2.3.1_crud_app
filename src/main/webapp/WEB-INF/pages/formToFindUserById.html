@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Find User</title>
+</head>
+<body>
+<h1> User</h1>
+<form method="get" th:action="@{'/user_getUserById'}">
+    <span>id</span>
+    <input name="id" type="number">
+
+    <button type="submit">find</button>
+
+</form >
+
+<form method="get" th:action="@{'/user_deleteUserById'}">
+    <span>id</span>
+    <input name="id" type="number">
+
+    <button type="submit">delete</button>
+</form >
+
+<form method="get" th:action="@{'/user_updateUser'}">
+    <span>id</span>
+    <input name="id" type="number">
+    <span>firstName</span>
+    <input name="firstName" type="text">
+    <span>lastName</span>
+    <input name="lastName" type="text">
+    <span>age</span>
+    <input name="age" type="number">
+
+    <button type="submit">update</button>
+</form >
+
+
+</body>
+</html>
